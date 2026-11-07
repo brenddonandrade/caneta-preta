@@ -254,7 +254,7 @@
 
   function blocoQuestao(q, escolha, revelar, acao) {
     const tx = q.texto && textos()[q.texto];
-    return `${tx ? `<details class="texto" open><summary>${h(tx.titulo)}</summary><p>${fmt(tx.corpo)}</p></details>` : ""}
+    return `${q.src ? `<p class="src">${h(q.src)}</p>` : ""}${tx ? `<details class="texto" open><summary>${h(tx.titulo)}</summary><p>${fmt(tx.corpo)}</p></details>` : ""}
       <p class="enun">${fmt(q.enun)}</p>
       <div class="alts">${q.alts.map((a, i) => {
         let cls = "";
