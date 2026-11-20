@@ -1,6 +1,6 @@
 // Service worker: deixa o app funcionando offline (ex.: no celular sem sinal).
 // Ao mudar arquivos do app, incremente VERSAO para os aparelhos baixarem a nova versão.
-const VERSAO = "cp-v2";
+const VERSAO = "cp-v3";
 const ARQUIVOS = [
   "./", "./index.html", "./css/style.css", "./icon.svg", "./manifest.webmanifest",
   "./js/app.js", "./js/data/edital.js", "./js/data/cronograma.js", "./js/data/questoes.js", "./js/data/flashcards.js",
